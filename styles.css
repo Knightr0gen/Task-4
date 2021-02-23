@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+	justify-content: center;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+}
+.main{
+    margin-top: 10%;
+	width:300px; 
+	padding: 15px; 
+    border-radius: 20px;
+	background-color: #ededed;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.377);
+}
+h1{
+	text-align: center; 
+	color: #005FCC;
+	margin: 10px;
+    font-weight: 700;
+}
+input[type=text]{
+	width: 90%;
+	padding: 10px;
+	font-size: 16px;
+	margin-left: 8px;
+	border-radius: 3px;
+	border:none;
+	outline: none;
+}
+.search{
+	position: relative;
+}
+.search span{
+	position: absolute;
+	top: -10px;
+	right: -4px;
+	background: #005FCC;
+	padding: 20px;
+	display: flex;
+	border-radius: 100%;
+	cursor: pointer;
+}
+ul{
+	padding: 2px;
+	list-style: none;
+}
+ul li{
+	background:#fff;
+	margin: 5px;
+	padding: 10px;
+	border-right: 4px solid  #005FCC; 
+	border-left: 4px solid  #005FCC; 
+}
+ul li i{
+	padding: 4px;
+	float: right;
+	cursor: pointer;
+}
+.fa-trash-alt{
+	color: #DA1C07;
+	text-align: center;
+}
+
+.fa-plus{
+    color: #fff;
+    
+}
+.click{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+}
+.click:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.596);
+}
+p{
+    color:red;
+    font-weight: 500;
+}
