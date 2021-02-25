@@ -8,7 +8,7 @@
 <div class="main" ng-app="myShoppingList" ng-controller="myCtrl">
     <h1>Todo List</h1>    
     <div class="search">
-      <input type="text" placeholder="Add" ng-model="addMe">
+      <input type="text" placeholder="Add" ng-model="addMe" class="ng-empy">
       <span class="click"ng-click="addItem()"><i class="fas fa-plus"></i></span>
     </div>
     <ul>
@@ -23,11 +23,20 @@ app.controller("myCtrl", function($scope) {
     $scope.products = ["Jogging", "Cleaning","Grocery"];
     $scope.addItem = function () {
         $scope.errortext = "";
-        if (!$scope.addMe) {return;}
+        if (!$scope.addMe) {
+            this.addMe = ' ';
+            return;
+        }
         if ($scope.products.indexOf($scope.addMe) == -1) {
+
             $scope.products.push($scope.addMe);
-        } else {
+            this.addMe= ' ';
+
+
+        } 
+        else {
             $scope.errortext = "This item is already in your Todo List.";
+            this.addMe = ' ';
         }
     }
     $scope.removeItem = function (x) {   
